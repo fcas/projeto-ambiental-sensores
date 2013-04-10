@@ -103,8 +103,8 @@
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           <Component id="jLabel1" min="-2" pref="111" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jComboBox1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                          <Component id="ComboVento1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="108" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
@@ -131,7 +131,7 @@
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jComboBox1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="ComboVento1" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jSeparator1" min="-2" pref="10" max="-2" attributes="0"/>
@@ -179,6 +179,9 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderChuvA1StateChanged"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JSlider" name="SliderFluxA1">
           <Properties>
@@ -190,6 +193,9 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderFluxA1StateChanged"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JSlider" name="SliderVentA1">
           <Properties>
@@ -202,6 +208,9 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderVentA1StateChanged"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JSlider" name="SliderTempA1">
           <Properties>
@@ -213,8 +222,11 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderTempA1StateChanged"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JComboBox" name="jComboBox1">
+        <Component class="javax.swing.JComboBox" name="ComboVento1">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="4">
@@ -225,6 +237,9 @@
               </StringArray>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ComboVento1ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
@@ -244,6 +259,9 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderBarA1StateChanged"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JSlider" name="SliderUmidA1">
           <Properties>
@@ -255,11 +273,17 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderUmidA1StateChanged"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="RadioButtonInc1">
           <Properties>
             <Property name="text" type="java.lang.String" value="Inc&#xea;ndio"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RadioButtonInc1ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JSeparator" name="jSeparator2">
         </Component>
@@ -273,6 +297,9 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderLixo1StateChanged"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JComboBox" name="ComboBoxAge1">
           <Properties>
@@ -284,6 +311,9 @@
               </StringArray>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ComboBoxAge1ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel2">
           <Properties>
@@ -345,7 +375,7 @@
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           <Component id="jLabel3" min="-2" pref="111" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jComboBox3" min="-2" max="-2" attributes="0"/>
+                          <Component id="ComboVento2" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
@@ -373,7 +403,7 @@
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jComboBox3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="ComboVento2" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jSeparator3" min="-2" pref="10" max="-2" attributes="0"/>
@@ -407,6 +437,9 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderPolA2StateChanged"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JSlider" name="SliderChuvA2">
           <Properties>
@@ -418,6 +451,9 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderChuvA2StateChanged"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JSlider" name="SliderFluxA2">
           <Properties>
@@ -429,6 +465,9 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderFluxA2StateChanged"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JSlider" name="SliderVentA2">
           <Properties>
@@ -441,6 +480,9 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderVentA2StateChanged"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JSlider" name="SliderTempA2">
           <Properties>
@@ -452,8 +494,11 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderTempA2StateChanged"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JComboBox" name="jComboBox3">
+        <Component class="javax.swing.JComboBox" name="ComboVento2">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="4">
@@ -464,6 +509,9 @@
               </StringArray>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ComboVento2ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel3">
           <Properties>
@@ -483,6 +531,9 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderBarA2StateChanged"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JSlider" name="SliderUmidA2">
           <Properties>
@@ -494,11 +545,17 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderUmidA2StateChanged"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="RadioButtonInc2">
           <Properties>
             <Property name="text" type="java.lang.String" value="Inc&#xea;ndio"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RadioButtonInc2ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JSeparator" name="jSeparator4">
         </Component>
@@ -512,6 +569,9 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderLixo2StateChanged"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JComboBox" name="ComboBoxAge2">
           <Properties>
@@ -523,6 +583,9 @@
               </StringArray>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ComboBoxAge2ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel4">
           <Properties>
@@ -584,7 +647,7 @@
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           <Component id="jLabel5" min="-2" pref="111" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jComboBox5" min="-2" max="-2" attributes="0"/>
+                          <Component id="ComboVento3" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
@@ -612,7 +675,7 @@
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jComboBox5" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="ComboVento3" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jSeparator5" min="-2" pref="10" max="-2" attributes="0"/>
@@ -646,6 +709,9 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderPolA3StateChanged"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JSlider" name="SliderChuvA3">
           <Properties>
@@ -657,6 +723,9 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderChuvA3StateChanged"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JSlider" name="SliderFluxA3">
           <Properties>
@@ -668,6 +737,9 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderFluxA3StateChanged"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JSlider" name="SliderVentA3">
           <Properties>
@@ -680,6 +752,9 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderVentA3StateChanged"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JSlider" name="SliderTempA3">
           <Properties>
@@ -691,8 +766,11 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderTempA3StateChanged"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JComboBox" name="jComboBox5">
+        <Component class="javax.swing.JComboBox" name="ComboVento3">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="4">
@@ -703,6 +781,9 @@
               </StringArray>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ComboVento3ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel5">
           <Properties>
@@ -722,6 +803,9 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderBarA3StateChanged"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JSlider" name="SliderUmidA3">
           <Properties>
@@ -733,11 +817,17 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderUmidA3StateChanged"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="RadioButtonInc3">
           <Properties>
             <Property name="text" type="java.lang.String" value="Inc&#xea;ndio"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RadioButtonInc3ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JSeparator" name="jSeparator6">
         </Component>
@@ -751,6 +841,9 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderLixo3StateChanged"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JComboBox" name="ComboBoxAge3">
           <Properties>
@@ -762,6 +855,9 @@
               </StringArray>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ComboBoxAge3ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel6">
           <Properties>
@@ -823,7 +919,7 @@
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           <Component id="jLabel7" min="-2" pref="111" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jComboBox7" min="-2" max="-2" attributes="0"/>
+                          <Component id="ComboVento4" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
@@ -851,7 +947,7 @@
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jComboBox7" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="ComboVento4" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jSeparator7" min="-2" pref="10" max="-2" attributes="0"/>
@@ -885,6 +981,9 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderPolA4StateChanged"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JSlider" name="SliderChuvA4">
           <Properties>
@@ -896,6 +995,9 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderChuvA4StateChanged"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JSlider" name="SliderFluxA4">
           <Properties>
@@ -907,6 +1009,9 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderFluxA4StateChanged"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JSlider" name="SliderVentA4">
           <Properties>
@@ -919,6 +1024,9 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderVentA4StateChanged"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JSlider" name="SliderTempA4">
           <Properties>
@@ -930,8 +1038,11 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderTempA4StateChanged"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JComboBox" name="jComboBox7">
+        <Component class="javax.swing.JComboBox" name="ComboVento4">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="4">
@@ -942,6 +1053,9 @@
               </StringArray>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ComboVento4ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel7">
           <Properties>
@@ -961,6 +1075,9 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderBarA4StateChanged"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JSlider" name="SliderUmidA4">
           <Properties>
@@ -972,11 +1089,17 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderUmidA4StateChanged"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="RadioButtonInc4">
           <Properties>
             <Property name="text" type="java.lang.String" value="Inc&#xea;ndio"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RadioButtonInc4ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JSeparator" name="jSeparator8">
         </Component>
@@ -990,6 +1113,9 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderLixo4StateChanged"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JComboBox" name="ComboBoxAge4">
           <Properties>
@@ -1001,6 +1127,9 @@
               </StringArray>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ComboBoxAge4ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel8">
           <Properties>

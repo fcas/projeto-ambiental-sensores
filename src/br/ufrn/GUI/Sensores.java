@@ -36,7 +36,7 @@ public class Sensores extends javax.swing.JFrame {
         SliderFluxA1 = new javax.swing.JSlider();
         SliderVentA1 = new javax.swing.JSlider();
         SliderTempA1 = new javax.swing.JSlider();
-        jComboBox1 = new javax.swing.JComboBox();
+        ComboVento1 = new javax.swing.JComboBox();
         jLabel1 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         SliderBarA1 = new javax.swing.JSlider();
@@ -52,7 +52,7 @@ public class Sensores extends javax.swing.JFrame {
         SliderFluxA2 = new javax.swing.JSlider();
         SliderVentA2 = new javax.swing.JSlider();
         SliderTempA2 = new javax.swing.JSlider();
-        jComboBox3 = new javax.swing.JComboBox();
+        ComboVento2 = new javax.swing.JComboBox();
         jLabel3 = new javax.swing.JLabel();
         jSeparator3 = new javax.swing.JSeparator();
         SliderBarA2 = new javax.swing.JSlider();
@@ -68,7 +68,7 @@ public class Sensores extends javax.swing.JFrame {
         SliderFluxA3 = new javax.swing.JSlider();
         SliderVentA3 = new javax.swing.JSlider();
         SliderTempA3 = new javax.swing.JSlider();
-        jComboBox5 = new javax.swing.JComboBox();
+        ComboVento3 = new javax.swing.JComboBox();
         jLabel5 = new javax.swing.JLabel();
         jSeparator5 = new javax.swing.JSeparator();
         SliderBarA3 = new javax.swing.JSlider();
@@ -84,7 +84,7 @@ public class Sensores extends javax.swing.JFrame {
         SliderFluxA4 = new javax.swing.JSlider();
         SliderVentA4 = new javax.swing.JSlider();
         SliderTempA4 = new javax.swing.JSlider();
-        jComboBox7 = new javax.swing.JComboBox();
+        ComboVento4 = new javax.swing.JComboBox();
         jLabel7 = new javax.swing.JLabel();
         jSeparator7 = new javax.swing.JSeparator();
         SliderBarA4 = new javax.swing.JSlider();
@@ -112,21 +112,46 @@ public class Sensores extends javax.swing.JFrame {
         SliderChuvA1.setToolTipText("");
         SliderChuvA1.setValue(2);
         SliderChuvA1.setBorder(javax.swing.BorderFactory.createTitledBorder("Probabilidade de chuva (%)"));
+        SliderChuvA1.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                SliderChuvA1StateChanged(evt);
+            }
+        });
 
         SliderFluxA1.setMaximum(300);
         SliderFluxA1.setToolTipText("");
         SliderFluxA1.setBorder(javax.swing.BorderFactory.createTitledBorder("Fluxo de veículos (veículos por hora)"));
+        SliderFluxA1.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                SliderFluxA1StateChanged(evt);
+            }
+        });
 
         SliderVentA1.setMaximum(150);
         SliderVentA1.setToolTipText("");
         SliderVentA1.setValue(15);
         SliderVentA1.setBorder(javax.swing.BorderFactory.createTitledBorder("Velocidade do vento"));
+        SliderVentA1.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                SliderVentA1StateChanged(evt);
+            }
+        });
 
         SliderTempA1.setToolTipText("");
         SliderTempA1.setValue(26);
         SliderTempA1.setBorder(javax.swing.BorderFactory.createTitledBorder("temperatura"));
+        SliderTempA1.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                SliderTempA1StateChanged(evt);
+            }
+        });
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Norte", "Sul", "Leste", "Oeste" }));
+        ComboVento1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Norte", "Sul", "Leste", "Oeste" }));
+        ComboVento1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ComboVento1ActionPerformed(evt);
+            }
+        });
 
         jLabel1.setText("Direção do vento");
 
@@ -134,18 +159,43 @@ public class Sensores extends javax.swing.JFrame {
         SliderBarA1.setToolTipText("");
         SliderBarA1.setValue(20);
         SliderBarA1.setBorder(javax.swing.BorderFactory.createTitledBorder("Nível de barulho dB"));
+        SliderBarA1.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                SliderBarA1StateChanged(evt);
+            }
+        });
 
         SliderUmidA1.setToolTipText("");
         SliderUmidA1.setValue(40);
         SliderUmidA1.setBorder(javax.swing.BorderFactory.createTitledBorder("Umidade relativa (%)"));
+        SliderUmidA1.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                SliderUmidA1StateChanged(evt);
+            }
+        });
 
         RadioButtonInc1.setText("Incêndio");
+        RadioButtonInc1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RadioButtonInc1ActionPerformed(evt);
+            }
+        });
 
         SliderLixo1.setMaximum(250);
         SliderLixo1.setValue(0);
         SliderLixo1.setBorder(javax.swing.BorderFactory.createTitledBorder("Quantidade de Lixo"));
+        SliderLixo1.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                SliderLixo1StateChanged(evt);
+            }
+        });
 
         ComboBoxAge1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "agente 1", "agente 2", "agente 3" }));
+        ComboBoxAge1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ComboBoxAge1ActionPerformed(evt);
+            }
+        });
 
         jLabel2.setText("Agente de coleta");
 
@@ -183,8 +233,8 @@ public class Sensores extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(21, 21, 21))
+                        .addComponent(ComboVento1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(108, 108, 108))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -206,7 +256,7 @@ public class Sensores extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ComboVento1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -231,25 +281,55 @@ public class Sensores extends javax.swing.JFrame {
         SliderPolA2.setMaximum(300);
         SliderPolA2.setValue(25);
         SliderPolA2.setBorder(javax.swing.BorderFactory.createTitledBorder("Indice de poluição"));
+        SliderPolA2.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                SliderPolA2StateChanged(evt);
+            }
+        });
 
         SliderChuvA2.setToolTipText("");
         SliderChuvA2.setValue(2);
         SliderChuvA2.setBorder(javax.swing.BorderFactory.createTitledBorder("Probabilidade de chuva (%)"));
+        SliderChuvA2.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                SliderChuvA2StateChanged(evt);
+            }
+        });
 
         SliderFluxA2.setMaximum(300);
         SliderFluxA2.setToolTipText("");
         SliderFluxA2.setBorder(javax.swing.BorderFactory.createTitledBorder("Fluxo de veículos (veículos por hora)"));
+        SliderFluxA2.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                SliderFluxA2StateChanged(evt);
+            }
+        });
 
         SliderVentA2.setMaximum(150);
         SliderVentA2.setToolTipText("");
         SliderVentA2.setValue(15);
         SliderVentA2.setBorder(javax.swing.BorderFactory.createTitledBorder("Velocidade do vento"));
+        SliderVentA2.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                SliderVentA2StateChanged(evt);
+            }
+        });
 
         SliderTempA2.setToolTipText("");
         SliderTempA2.setValue(26);
         SliderTempA2.setBorder(javax.swing.BorderFactory.createTitledBorder("temperatura"));
+        SliderTempA2.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                SliderTempA2StateChanged(evt);
+            }
+        });
 
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Norte", "Sul", "Leste", "Oeste" }));
+        ComboVento2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Norte", "Sul", "Leste", "Oeste" }));
+        ComboVento2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ComboVento2ActionPerformed(evt);
+            }
+        });
 
         jLabel3.setText("Direção do vento");
 
@@ -257,18 +337,43 @@ public class Sensores extends javax.swing.JFrame {
         SliderBarA2.setToolTipText("");
         SliderBarA2.setValue(20);
         SliderBarA2.setBorder(javax.swing.BorderFactory.createTitledBorder("Nível de barulho dB"));
+        SliderBarA2.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                SliderBarA2StateChanged(evt);
+            }
+        });
 
         SliderUmidA2.setToolTipText("");
         SliderUmidA2.setValue(40);
         SliderUmidA2.setBorder(javax.swing.BorderFactory.createTitledBorder("Umidade relativa (%)"));
+        SliderUmidA2.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                SliderUmidA2StateChanged(evt);
+            }
+        });
 
         RadioButtonInc2.setText("Incêndio");
+        RadioButtonInc2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RadioButtonInc2ActionPerformed(evt);
+            }
+        });
 
         SliderLixo2.setMaximum(250);
         SliderLixo2.setValue(0);
         SliderLixo2.setBorder(javax.swing.BorderFactory.createTitledBorder("Quantidade de Lixo"));
+        SliderLixo2.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                SliderLixo2StateChanged(evt);
+            }
+        });
 
         ComboBoxAge2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "agente 1", "agente 2", "agente 3" }));
+        ComboBoxAge2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ComboBoxAge2ActionPerformed(evt);
+            }
+        });
 
         jLabel4.setText("Agente de coleta");
 
@@ -306,7 +411,7 @@ public class Sensores extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(ComboVento2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(21, 21, 21))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel4)
@@ -329,7 +434,7 @@ public class Sensores extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ComboVento2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -354,25 +459,55 @@ public class Sensores extends javax.swing.JFrame {
         SliderPolA3.setMaximum(300);
         SliderPolA3.setValue(25);
         SliderPolA3.setBorder(javax.swing.BorderFactory.createTitledBorder("Indice de poluição"));
+        SliderPolA3.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                SliderPolA3StateChanged(evt);
+            }
+        });
 
         SliderChuvA3.setToolTipText("");
         SliderChuvA3.setValue(2);
         SliderChuvA3.setBorder(javax.swing.BorderFactory.createTitledBorder("Probabilidade de chuva (%)"));
+        SliderChuvA3.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                SliderChuvA3StateChanged(evt);
+            }
+        });
 
         SliderFluxA3.setMaximum(300);
         SliderFluxA3.setToolTipText("");
         SliderFluxA3.setBorder(javax.swing.BorderFactory.createTitledBorder("Fluxo de veículos (veículos por hora)"));
+        SliderFluxA3.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                SliderFluxA3StateChanged(evt);
+            }
+        });
 
         SliderVentA3.setMaximum(150);
         SliderVentA3.setToolTipText("");
         SliderVentA3.setValue(15);
         SliderVentA3.setBorder(javax.swing.BorderFactory.createTitledBorder("Velocidade do vento"));
+        SliderVentA3.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                SliderVentA3StateChanged(evt);
+            }
+        });
 
         SliderTempA3.setToolTipText("");
         SliderTempA3.setValue(26);
         SliderTempA3.setBorder(javax.swing.BorderFactory.createTitledBorder("temperatura"));
+        SliderTempA3.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                SliderTempA3StateChanged(evt);
+            }
+        });
 
-        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Norte", "Sul", "Leste", "Oeste" }));
+        ComboVento3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Norte", "Sul", "Leste", "Oeste" }));
+        ComboVento3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ComboVento3ActionPerformed(evt);
+            }
+        });
 
         jLabel5.setText("Direção do vento");
 
@@ -380,18 +515,43 @@ public class Sensores extends javax.swing.JFrame {
         SliderBarA3.setToolTipText("");
         SliderBarA3.setValue(20);
         SliderBarA3.setBorder(javax.swing.BorderFactory.createTitledBorder("Nível de barulho dB"));
+        SliderBarA3.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                SliderBarA3StateChanged(evt);
+            }
+        });
 
         SliderUmidA3.setToolTipText("");
         SliderUmidA3.setValue(40);
         SliderUmidA3.setBorder(javax.swing.BorderFactory.createTitledBorder("Umidade relativa (%)"));
+        SliderUmidA3.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                SliderUmidA3StateChanged(evt);
+            }
+        });
 
         RadioButtonInc3.setText("Incêndio");
+        RadioButtonInc3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RadioButtonInc3ActionPerformed(evt);
+            }
+        });
 
         SliderLixo3.setMaximum(250);
         SliderLixo3.setValue(0);
         SliderLixo3.setBorder(javax.swing.BorderFactory.createTitledBorder("Quantidade de Lixo"));
+        SliderLixo3.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                SliderLixo3StateChanged(evt);
+            }
+        });
 
         ComboBoxAge3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "agente 1", "agente 2", "agente 3" }));
+        ComboBoxAge3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ComboBoxAge3ActionPerformed(evt);
+            }
+        });
 
         jLabel6.setText("Agente de coleta");
 
@@ -429,7 +589,7 @@ public class Sensores extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(ComboVento3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(21, 21, 21))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                         .addComponent(jLabel6)
@@ -452,7 +612,7 @@ public class Sensores extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ComboVento3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -477,25 +637,55 @@ public class Sensores extends javax.swing.JFrame {
         SliderPolA4.setMaximum(300);
         SliderPolA4.setValue(25);
         SliderPolA4.setBorder(javax.swing.BorderFactory.createTitledBorder("Indice de poluição"));
+        SliderPolA4.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                SliderPolA4StateChanged(evt);
+            }
+        });
 
         SliderChuvA4.setToolTipText("");
         SliderChuvA4.setValue(2);
         SliderChuvA4.setBorder(javax.swing.BorderFactory.createTitledBorder("Probabilidade de chuva (%)"));
+        SliderChuvA4.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                SliderChuvA4StateChanged(evt);
+            }
+        });
 
         SliderFluxA4.setMaximum(300);
         SliderFluxA4.setToolTipText("");
         SliderFluxA4.setBorder(javax.swing.BorderFactory.createTitledBorder("Fluxo de veículos (veículos por hora)"));
+        SliderFluxA4.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                SliderFluxA4StateChanged(evt);
+            }
+        });
 
         SliderVentA4.setMaximum(150);
         SliderVentA4.setToolTipText("");
         SliderVentA4.setValue(15);
         SliderVentA4.setBorder(javax.swing.BorderFactory.createTitledBorder("Velocidade do vento"));
+        SliderVentA4.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                SliderVentA4StateChanged(evt);
+            }
+        });
 
         SliderTempA4.setToolTipText("");
         SliderTempA4.setValue(26);
         SliderTempA4.setBorder(javax.swing.BorderFactory.createTitledBorder("temperatura"));
+        SliderTempA4.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                SliderTempA4StateChanged(evt);
+            }
+        });
 
-        jComboBox7.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Norte", "Sul", "Leste", "Oeste" }));
+        ComboVento4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Norte", "Sul", "Leste", "Oeste" }));
+        ComboVento4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ComboVento4ActionPerformed(evt);
+            }
+        });
 
         jLabel7.setText("Direção do vento");
 
@@ -503,18 +693,43 @@ public class Sensores extends javax.swing.JFrame {
         SliderBarA4.setToolTipText("");
         SliderBarA4.setValue(20);
         SliderBarA4.setBorder(javax.swing.BorderFactory.createTitledBorder("Nível de barulho dB"));
+        SliderBarA4.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                SliderBarA4StateChanged(evt);
+            }
+        });
 
         SliderUmidA4.setToolTipText("");
         SliderUmidA4.setValue(40);
         SliderUmidA4.setBorder(javax.swing.BorderFactory.createTitledBorder("Umidade relativa (%)"));
+        SliderUmidA4.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                SliderUmidA4StateChanged(evt);
+            }
+        });
 
         RadioButtonInc4.setText("Incêndio");
+        RadioButtonInc4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RadioButtonInc4ActionPerformed(evt);
+            }
+        });
 
         SliderLixo4.setMaximum(250);
         SliderLixo4.setValue(0);
         SliderLixo4.setBorder(javax.swing.BorderFactory.createTitledBorder("Quantidade de Lixo"));
+        SliderLixo4.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                SliderLixo4StateChanged(evt);
+            }
+        });
 
         ComboBoxAge4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "agente 1", "agente 2", "agente 3" }));
+        ComboBoxAge4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ComboBoxAge4ActionPerformed(evt);
+            }
+        });
 
         jLabel8.setText("Agente de coleta");
 
@@ -552,7 +767,7 @@ public class Sensores extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBox7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(ComboVento4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(21, 21, 21))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                         .addComponent(jLabel8)
@@ -575,7 +790,7 @@ public class Sensores extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
-                    .addComponent(jComboBox7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ComboVento4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator7, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -628,6 +843,202 @@ public class Sensores extends javax.swing.JFrame {
         atualizar.atualizarIndicePoluicao(1, SliderPolA1.getValue());
     }//GEN-LAST:event_SliderPolA1StateChanged
 
+    private void SliderPolA2StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_SliderPolA2StateChanged
+        atualizar.atualizarIndicePoluicao(2, SliderPolA2.getValue());
+    }//GEN-LAST:event_SliderPolA2StateChanged
+
+    private void SliderPolA3StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_SliderPolA3StateChanged
+        atualizar.atualizarIndicePoluicao(3, SliderPolA3.getValue());
+    }//GEN-LAST:event_SliderPolA3StateChanged
+
+    private void SliderPolA4StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_SliderPolA4StateChanged
+        atualizar.atualizarIndicePoluicao(4, SliderPolA4.getValue());
+    }//GEN-LAST:event_SliderPolA4StateChanged
+
+    private void SliderFluxA1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_SliderFluxA1StateChanged
+        atualizar.atualizarFluxoDeVeiculos(1, SliderFluxA1.getValue());
+    }//GEN-LAST:event_SliderFluxA1StateChanged
+
+    private void SliderFluxA2StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_SliderFluxA2StateChanged
+        atualizar.atualizarFluxoDeVeiculos(2, SliderFluxA2.getValue());
+    }//GEN-LAST:event_SliderFluxA2StateChanged
+
+    private void SliderFluxA3StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_SliderFluxA3StateChanged
+        atualizar.atualizarFluxoDeVeiculos(3, SliderFluxA3.getValue());
+    }//GEN-LAST:event_SliderFluxA3StateChanged
+
+    private void SliderFluxA4StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_SliderFluxA4StateChanged
+        atualizar.atualizarFluxoDeVeiculos(4, SliderFluxA4.getValue());
+    }//GEN-LAST:event_SliderFluxA4StateChanged
+
+    private void SliderVentA1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_SliderVentA1StateChanged
+        atualizar.atualizarVelociadeDoVento(1, SliderVentA1.getValue());
+    }//GEN-LAST:event_SliderVentA1StateChanged
+
+    private void SliderVentA2StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_SliderVentA2StateChanged
+        atualizar.atualizarVelociadeDoVento(2, SliderVentA2.getValue());
+    }//GEN-LAST:event_SliderVentA2StateChanged
+
+    private void SliderVentA3StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_SliderVentA3StateChanged
+        atualizar.atualizarVelociadeDoVento(3, SliderVentA3.getValue());
+    }//GEN-LAST:event_SliderVentA3StateChanged
+
+    private void SliderVentA4StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_SliderVentA4StateChanged
+        atualizar.atualizarVelociadeDoVento(4, SliderVentA4.getValue());
+    }//GEN-LAST:event_SliderVentA4StateChanged
+
+    private void SliderChuvA1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_SliderChuvA1StateChanged
+        atualizar.atualizarProbalidadeChuva(1, SliderChuvA1.getValue());
+    }//GEN-LAST:event_SliderChuvA1StateChanged
+
+    private void SliderChuvA2StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_SliderChuvA2StateChanged
+        atualizar.atualizarProbalidadeChuva(2, SliderChuvA2.getValue());
+    }//GEN-LAST:event_SliderChuvA2StateChanged
+
+    private void SliderChuvA3StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_SliderChuvA3StateChanged
+        atualizar.atualizarProbalidadeChuva(3, SliderChuvA3.getValue());
+    }//GEN-LAST:event_SliderChuvA3StateChanged
+
+    private void SliderChuvA4StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_SliderChuvA4StateChanged
+        atualizar.atualizarProbalidadeChuva(4, SliderChuvA4.getValue());
+    }//GEN-LAST:event_SliderChuvA4StateChanged
+
+    private void SliderBarA1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_SliderBarA1StateChanged
+        atualizar.atualizarQuantidadeRuido(1, SliderBarA1.getValue());
+    }//GEN-LAST:event_SliderBarA1StateChanged
+
+    private void SliderBarA2StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_SliderBarA2StateChanged
+        atualizar.atualizarQuantidadeRuido(2, SliderBarA2.getValue());
+    }//GEN-LAST:event_SliderBarA2StateChanged
+
+    private void SliderBarA3StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_SliderBarA3StateChanged
+        atualizar.atualizarQuantidadeRuido(3, SliderBarA3.getValue());
+    }//GEN-LAST:event_SliderBarA3StateChanged
+
+    private void SliderBarA4StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_SliderBarA4StateChanged
+        atualizar.atualizarQuantidadeRuido(4, SliderBarA4.getValue());
+    }//GEN-LAST:event_SliderBarA4StateChanged
+
+    private void ComboVento1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComboVento1ActionPerformed
+        String Vento = ComboVento1.getSelectedItem().toString();
+        atualizar.atualizardirecaoDoVento(1, Vento);
+    }//GEN-LAST:event_ComboVento1ActionPerformed
+
+    private void ComboVento2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComboVento2ActionPerformed
+        String Vento = ComboVento2.getSelectedItem().toString();
+        atualizar.atualizardirecaoDoVento(2, Vento);
+    }//GEN-LAST:event_ComboVento2ActionPerformed
+
+    private void ComboVento3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComboVento3ActionPerformed
+        String Vento = ComboVento3.getSelectedItem().toString();
+        atualizar.atualizardirecaoDoVento(3, Vento);
+    }//GEN-LAST:event_ComboVento3ActionPerformed
+
+    private void ComboVento4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComboVento4ActionPerformed
+        String Vento = ComboVento4.getSelectedItem().toString();
+        atualizar.atualizardirecaoDoVento(4, Vento);
+    }//GEN-LAST:event_ComboVento4ActionPerformed
+
+    private void SliderTempA1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_SliderTempA1StateChanged
+        atualizar.atualizarTemeperatura(1, SliderTempA1.getValue());
+    }//GEN-LAST:event_SliderTempA1StateChanged
+
+    private void SliderTempA2StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_SliderTempA2StateChanged
+        atualizar.atualizarTemeperatura(2, SliderTempA1.getValue());
+    }//GEN-LAST:event_SliderTempA2StateChanged
+
+    private void SliderTempA3StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_SliderTempA3StateChanged
+        atualizar.atualizarTemeperatura(3, SliderTempA1.getValue());
+    }//GEN-LAST:event_SliderTempA3StateChanged
+
+    private void SliderTempA4StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_SliderTempA4StateChanged
+        atualizar.atualizarTemeperatura(4, SliderTempA1.getValue());
+    }//GEN-LAST:event_SliderTempA4StateChanged
+
+    private void SliderUmidA1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_SliderUmidA1StateChanged
+        atualizar.atualizarHumidade(1, SliderUmidA1.getValue());
+    }//GEN-LAST:event_SliderUmidA1StateChanged
+
+    private void SliderUmidA2StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_SliderUmidA2StateChanged
+        atualizar.atualizarHumidade(2, SliderUmidA2.getValue());
+    }//GEN-LAST:event_SliderUmidA2StateChanged
+
+    private void SliderUmidA3StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_SliderUmidA3StateChanged
+        atualizar.atualizarHumidade(3, SliderUmidA3.getValue());
+    }//GEN-LAST:event_SliderUmidA3StateChanged
+
+    private void SliderUmidA4StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_SliderUmidA4StateChanged
+        atualizar.atualizarHumidade(4, SliderUmidA4.getValue());
+    }//GEN-LAST:event_SliderUmidA4StateChanged
+
+    private void RadioButtonInc1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RadioButtonInc1ActionPerformed
+        if(RadioButtonInc1.isSelected()){
+                   atualizar.atualizarIncidenciaDeIncendio(1, true);
+        }else{
+                   atualizar.atualizarIncidenciaDeIncendio(1, false);
+        }
+    }//GEN-LAST:event_RadioButtonInc1ActionPerformed
+
+    private void RadioButtonInc2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RadioButtonInc2ActionPerformed
+        if(RadioButtonInc2.isSelected()){
+                   atualizar.atualizarIncidenciaDeIncendio(2, true);
+        }else{
+                   atualizar.atualizarIncidenciaDeIncendio(2, false);
+        }
+    }//GEN-LAST:event_RadioButtonInc2ActionPerformed
+
+    private void RadioButtonInc3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RadioButtonInc3ActionPerformed
+        if(RadioButtonInc3.isSelected()){
+                   atualizar.atualizarIncidenciaDeIncendio(3, true);
+        }else{
+                   atualizar.atualizarIncidenciaDeIncendio(3, false);
+        }
+    }//GEN-LAST:event_RadioButtonInc3ActionPerformed
+
+    private void RadioButtonInc4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RadioButtonInc4ActionPerformed
+        if(RadioButtonInc4.isSelected()){
+                   atualizar.atualizarIncidenciaDeIncendio(4, true);
+        }else{
+                   atualizar.atualizarIncidenciaDeIncendio(4, false);
+        }
+    }//GEN-LAST:event_RadioButtonInc4ActionPerformed
+
+    private void SliderLixo1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_SliderLixo1StateChanged
+        atualizar.atualizarQuantidadeLixo(1, SliderLixo1.getValue());
+    }//GEN-LAST:event_SliderLixo1StateChanged
+
+    private void SliderLixo2StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_SliderLixo2StateChanged
+        atualizar.atualizarQuantidadeLixo(2, SliderLixo2.getValue());
+    }//GEN-LAST:event_SliderLixo2StateChanged
+
+    private void SliderLixo3StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_SliderLixo3StateChanged
+        atualizar.atualizarQuantidadeLixo(3, SliderLixo3.getValue());
+    }//GEN-LAST:event_SliderLixo3StateChanged
+
+    private void SliderLixo4StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_SliderLixo4StateChanged
+        atualizar.atualizarQuantidadeLixo(4, SliderLixo4.getValue());
+    }//GEN-LAST:event_SliderLixo4StateChanged
+
+    private void ComboBoxAge1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComboBoxAge1ActionPerformed
+        String Agente = ComboBoxAge1.getSelectedItem().toString();
+        atualizar.atualizarAgenteProximo(1, Agente);
+    }//GEN-LAST:event_ComboBoxAge1ActionPerformed
+
+    private void ComboBoxAge2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComboBoxAge2ActionPerformed
+        String Agente = ComboBoxAge2.getSelectedItem().toString();
+        atualizar.atualizarAgenteProximo(2, Agente);
+    }//GEN-LAST:event_ComboBoxAge2ActionPerformed
+
+    private void ComboBoxAge3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComboBoxAge3ActionPerformed
+        String Agente = ComboBoxAge3.getSelectedItem().toString();
+        atualizar.atualizarAgenteProximo(3, Agente);
+    }//GEN-LAST:event_ComboBoxAge3ActionPerformed
+
+    private void ComboBoxAge4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComboBoxAge4ActionPerformed
+        String Agente = ComboBoxAge4.getSelectedItem().toString();
+        atualizar.atualizarAgenteProximo(4, Agente);
+    }//GEN-LAST:event_ComboBoxAge4ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -667,6 +1078,10 @@ public class Sensores extends javax.swing.JFrame {
     private javax.swing.JComboBox ComboBoxAge2;
     private javax.swing.JComboBox ComboBoxAge3;
     private javax.swing.JComboBox ComboBoxAge4;
+    private javax.swing.JComboBox ComboVento1;
+    private javax.swing.JComboBox ComboVento2;
+    private javax.swing.JComboBox ComboVento3;
+    private javax.swing.JComboBox ComboVento4;
     private javax.swing.JRadioButton RadioButtonInc1;
     private javax.swing.JRadioButton RadioButtonInc2;
     private javax.swing.JRadioButton RadioButtonInc3;
@@ -703,10 +1118,6 @@ public class Sensores extends javax.swing.JFrame {
     private javax.swing.JSlider SliderVentA2;
     private javax.swing.JSlider SliderVentA3;
     private javax.swing.JSlider SliderVentA4;
-    private javax.swing.JComboBox jComboBox1;
-    private javax.swing.JComboBox jComboBox3;
-    private javax.swing.JComboBox jComboBox5;
-    private javax.swing.JComboBox jComboBox7;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
