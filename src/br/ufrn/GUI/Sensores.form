@@ -37,10 +37,15 @@
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jPanel1" min="-2" pref="538" max="-2" attributes="0"/>
-          <Component id="jPanel2" min="-2" pref="538" max="-2" attributes="0"/>
-          <Component id="jPanel3" min="-2" pref="538" max="-2" attributes="0"/>
-          <Component id="jPanel4" min="-2" pref="538" max="-2" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                  <Component id="jPanel3" alignment="0" pref="598" max="32767" attributes="0"/>
+                  <Component id="jPanel1" alignment="0" pref="598" max="32767" attributes="0"/>
+                  <Component id="jPanel2" alignment="0" pref="598" max="32767" attributes="0"/>
+                  <Component id="jPanel4" alignment="0" pref="598" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
   </Layout>
@@ -62,31 +67,31 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
-                  <Component id="jRadioButton1" min="-2" max="-2" attributes="0"/>
+                  <Component id="RadioButtonInc1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
                   <Group type="103" groupAlignment="1" attributes="0">
-                      <Component id="jSlider8" min="-2" max="-2" attributes="0"/>
+                      <Component id="SliderLixo1" min="-2" max="-2" attributes="0"/>
                       <Component id="jSeparator2" alignment="1" min="-2" pref="200" max="-2" attributes="0"/>
-                      <Component id="jSlider7" min="-2" max="-2" attributes="0"/>
+                      <Component id="SliderUmidA1" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                              <Component id="jSlider5" min="-2" max="-2" attributes="0"/>
+                              <Component id="SliderTempA1" min="-2" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" max="-2" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="jSeparator1" max="32767" attributes="0"/>
                                   </Group>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jSlider1" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jSlider3" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jSlider4" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jSlider2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="SliderPolA1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="SliderFluxA1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="SliderVentA1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="SliderChuvA1" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
-                          <Component id="jSlider6" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="SliderBarA1" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -98,13 +103,13 @@
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           <Component id="jLabel1" min="-2" pref="111" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jComboBox1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                          <Component id="ComboVento1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="108" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="jComboBox2" min="-2" max="-2" attributes="0"/>
+                          <Component id="ComboBoxAge1" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
@@ -114,35 +119,35 @@
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <Component id="jSlider1" min="-2" max="-2" attributes="0"/>
+                  <Component id="SliderPolA1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jSlider3" min="-2" max="-2" attributes="0"/>
+                  <Component id="SliderFluxA1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jSlider4" min="-2" max="-2" attributes="0"/>
+                  <Component id="SliderVentA1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jSlider2" min="-2" max="-2" attributes="0"/>
+                  <Component id="SliderChuvA1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
-                  <Component id="jSlider6" min="-2" max="-2" attributes="0"/>
+                  <Component id="SliderBarA1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jComboBox1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="ComboVento1" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jSeparator1" min="-2" pref="10" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jSlider5" min="-2" max="-2" attributes="0"/>
+                  <Component id="SliderTempA1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jSlider7" min="-2" max="-2" attributes="0"/>
+                  <Component id="SliderUmidA1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jRadioButton1" min="-2" max="-2" attributes="0"/>
+                  <Component id="RadioButtonInc1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jSeparator2" min="-2" pref="10" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jSlider8" min="-2" max="-2" attributes="0"/>
+                  <Component id="SliderLixo1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jComboBox2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="ComboBoxAge1" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -150,7 +155,7 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JSlider" name="jSlider1">
+        <Component class="javax.swing.JSlider" name="SliderPolA1">
           <Properties>
             <Property name="maximum" type="int" value="300"/>
             <Property name="value" type="int" value="25"/>
@@ -161,10 +166,10 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="jSlider1StateChanged"/>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderPolA1StateChanged"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JSlider" name="jSlider2">
+        <Component class="javax.swing.JSlider" name="SliderChuvA1">
           <Properties>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="value" type="int" value="2"/>
@@ -174,8 +179,11 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderChuvA1StateChanged"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JSlider" name="jSlider3">
+        <Component class="javax.swing.JSlider" name="SliderFluxA1">
           <Properties>
             <Property name="maximum" type="int" value="300"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
@@ -185,8 +193,11 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderFluxA1StateChanged"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JSlider" name="jSlider4">
+        <Component class="javax.swing.JSlider" name="SliderVentA1">
           <Properties>
             <Property name="maximum" type="int" value="150"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
@@ -197,8 +208,11 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderVentA1StateChanged"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JSlider" name="jSlider5">
+        <Component class="javax.swing.JSlider" name="SliderTempA1">
           <Properties>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="value" type="int" value="26"/>
@@ -208,8 +222,11 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderTempA1StateChanged"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JComboBox" name="jComboBox1">
+        <Component class="javax.swing.JComboBox" name="ComboVento1">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="4">
@@ -220,18 +237,18 @@
               </StringArray>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ComboVento1ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
             <Property name="text" type="java.lang.String" value="Dire&#xe7;&#xe3;o do vento"/>
           </Properties>
-          <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="Dire&#xe7;&#xe3;o do vento"/>
-          </AccessibilityProperties>
         </Component>
         <Component class="javax.swing.JSeparator" name="jSeparator1">
         </Component>
-        <Component class="javax.swing.JSlider" name="jSlider6">
+        <Component class="javax.swing.JSlider" name="SliderBarA1">
           <Properties>
             <Property name="maximum" type="int" value="120"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
@@ -242,8 +259,11 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderBarA1StateChanged"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JSlider" name="jSlider7">
+        <Component class="javax.swing.JSlider" name="SliderUmidA1">
           <Properties>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="value" type="int" value="40"/>
@@ -253,24 +273,35 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderUmidA1StateChanged"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="jRadioButton1">
+        <Component class="javax.swing.JRadioButton" name="RadioButtonInc1">
           <Properties>
             <Property name="text" type="java.lang.String" value="Inc&#xea;ndio"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RadioButtonInc1ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JSeparator" name="jSeparator2">
         </Component>
-        <Component class="javax.swing.JSlider" name="jSlider8">
+        <Component class="javax.swing.JSlider" name="SliderLixo1">
           <Properties>
+            <Property name="maximum" type="int" value="250"/>
+            <Property name="value" type="int" value="0"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-                <TitledBorder title="temperatura"/>
+                <TitledBorder title="Quantidade de Lixo"/>
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderLixo1StateChanged"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JComboBox" name="jComboBox2">
+        <Component class="javax.swing.JComboBox" name="ComboBoxAge1">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="3">
@@ -280,6 +311,9 @@
               </StringArray>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ComboBoxAge1ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel2">
           <Properties>
@@ -305,31 +339,31 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
-                  <Component id="jRadioButton2" min="-2" max="-2" attributes="0"/>
+                  <Component id="RadioButtonInc2" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
                   <Group type="103" groupAlignment="1" attributes="0">
-                      <Component id="jSlider16" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Component id="SliderLixo2" alignment="1" min="-2" max="-2" attributes="0"/>
                       <Component id="jSeparator4" alignment="1" min="-2" pref="200" max="-2" attributes="0"/>
-                      <Component id="jSlider15" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Component id="SliderUmidA2" alignment="1" min="-2" max="-2" attributes="0"/>
                       <Group type="103" alignment="1" groupAlignment="0" attributes="0">
                           <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                              <Component id="jSlider13" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Component id="SliderTempA2" alignment="1" min="-2" max="-2" attributes="0"/>
                               <Group type="103" alignment="1" groupAlignment="1" max="-2" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="jSeparator3" max="32767" attributes="0"/>
                                   </Group>
                                   <Group type="103" alignment="1" groupAlignment="0" attributes="0">
-                                      <Component id="jSlider9" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jSlider11" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jSlider12" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jSlider10" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="SliderPolA2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="SliderFluxA2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="SliderVentA2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="SliderChuvA2" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
-                          <Component id="jSlider14" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="SliderBarA2" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -341,13 +375,13 @@
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           <Component id="jLabel3" min="-2" pref="111" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jComboBox3" min="-2" max="-2" attributes="0"/>
+                          <Component id="ComboVento2" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="jComboBox4" min="-2" max="-2" attributes="0"/>
+                          <Component id="ComboBoxAge2" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
@@ -357,35 +391,35 @@
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <Component id="jSlider9" min="-2" max="-2" attributes="0"/>
+                  <Component id="SliderPolA2" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jSlider11" min="-2" max="-2" attributes="0"/>
+                  <Component id="SliderFluxA2" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jSlider12" min="-2" max="-2" attributes="0"/>
+                  <Component id="SliderVentA2" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jSlider10" min="-2" max="-2" attributes="0"/>
+                  <Component id="SliderChuvA2" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
-                  <Component id="jSlider14" min="-2" max="-2" attributes="0"/>
+                  <Component id="SliderBarA2" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jComboBox3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="ComboVento2" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jSeparator3" min="-2" pref="10" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jSlider13" min="-2" max="-2" attributes="0"/>
+                  <Component id="SliderTempA2" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jSlider15" min="-2" max="-2" attributes="0"/>
+                  <Component id="SliderUmidA2" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jRadioButton2" min="-2" max="-2" attributes="0"/>
+                  <Component id="RadioButtonInc2" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jSeparator4" min="-2" pref="10" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jSlider16" min="-2" max="-2" attributes="0"/>
+                  <Component id="SliderLixo2" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jComboBox4" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="ComboBoxAge2" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -393,7 +427,7 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JSlider" name="jSlider9">
+        <Component class="javax.swing.JSlider" name="SliderPolA2">
           <Properties>
             <Property name="maximum" type="int" value="300"/>
             <Property name="value" type="int" value="25"/>
@@ -403,8 +437,11 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderPolA2StateChanged"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JSlider" name="jSlider10">
+        <Component class="javax.swing.JSlider" name="SliderChuvA2">
           <Properties>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="value" type="int" value="2"/>
@@ -414,8 +451,11 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderChuvA2StateChanged"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JSlider" name="jSlider11">
+        <Component class="javax.swing.JSlider" name="SliderFluxA2">
           <Properties>
             <Property name="maximum" type="int" value="300"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
@@ -425,8 +465,11 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderFluxA2StateChanged"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JSlider" name="jSlider12">
+        <Component class="javax.swing.JSlider" name="SliderVentA2">
           <Properties>
             <Property name="maximum" type="int" value="150"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
@@ -437,8 +480,11 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderVentA2StateChanged"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JSlider" name="jSlider13">
+        <Component class="javax.swing.JSlider" name="SliderTempA2">
           <Properties>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="value" type="int" value="26"/>
@@ -448,8 +494,11 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderTempA2StateChanged"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JComboBox" name="jComboBox3">
+        <Component class="javax.swing.JComboBox" name="ComboVento2">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="4">
@@ -460,6 +509,9 @@
               </StringArray>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ComboVento2ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel3">
           <Properties>
@@ -468,7 +520,7 @@
         </Component>
         <Component class="javax.swing.JSeparator" name="jSeparator3">
         </Component>
-        <Component class="javax.swing.JSlider" name="jSlider14">
+        <Component class="javax.swing.JSlider" name="SliderBarA2">
           <Properties>
             <Property name="maximum" type="int" value="120"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
@@ -479,8 +531,11 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderBarA2StateChanged"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JSlider" name="jSlider15">
+        <Component class="javax.swing.JSlider" name="SliderUmidA2">
           <Properties>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="value" type="int" value="40"/>
@@ -490,24 +545,35 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderUmidA2StateChanged"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="jRadioButton2">
+        <Component class="javax.swing.JRadioButton" name="RadioButtonInc2">
           <Properties>
             <Property name="text" type="java.lang.String" value="Inc&#xea;ndio"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RadioButtonInc2ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JSeparator" name="jSeparator4">
         </Component>
-        <Component class="javax.swing.JSlider" name="jSlider16">
+        <Component class="javax.swing.JSlider" name="SliderLixo2">
           <Properties>
+            <Property name="maximum" type="int" value="250"/>
+            <Property name="value" type="int" value="0"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-                <TitledBorder title="temperatura"/>
+                <TitledBorder title="Quantidade de Lixo"/>
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderLixo2StateChanged"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JComboBox" name="jComboBox4">
+        <Component class="javax.swing.JComboBox" name="ComboBoxAge2">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="3">
@@ -517,6 +583,9 @@
               </StringArray>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ComboBoxAge2ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel4">
           <Properties>
@@ -542,31 +611,31 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
-                  <Component id="jRadioButton3" min="-2" max="-2" attributes="0"/>
+                  <Component id="RadioButtonInc3" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
                   <Group type="103" groupAlignment="1" attributes="0">
-                      <Component id="jSlider24" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Component id="SliderLixo3" alignment="1" min="-2" max="-2" attributes="0"/>
                       <Component id="jSeparator6" alignment="1" min="-2" pref="200" max="-2" attributes="0"/>
-                      <Component id="jSlider23" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Component id="SliderUmidA3" alignment="1" min="-2" max="-2" attributes="0"/>
                       <Group type="103" alignment="1" groupAlignment="0" attributes="0">
                           <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                              <Component id="jSlider21" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Component id="SliderTempA3" alignment="1" min="-2" max="-2" attributes="0"/>
                               <Group type="103" alignment="1" groupAlignment="1" max="-2" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="jSeparator5" max="32767" attributes="0"/>
                                   </Group>
                                   <Group type="103" alignment="1" groupAlignment="0" attributes="0">
-                                      <Component id="jSlider17" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jSlider19" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jSlider20" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jSlider18" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="SliderPolA3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="SliderFluxA3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="SliderVentA3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="SliderChuvA3" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
-                          <Component id="jSlider22" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="SliderBarA3" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -578,13 +647,13 @@
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           <Component id="jLabel5" min="-2" pref="111" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jComboBox5" min="-2" max="-2" attributes="0"/>
+                          <Component id="ComboVento3" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="jComboBox6" min="-2" max="-2" attributes="0"/>
+                          <Component id="ComboBoxAge3" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
@@ -594,35 +663,35 @@
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <Component id="jSlider17" min="-2" max="-2" attributes="0"/>
+                  <Component id="SliderPolA3" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jSlider19" min="-2" max="-2" attributes="0"/>
+                  <Component id="SliderFluxA3" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jSlider20" min="-2" max="-2" attributes="0"/>
+                  <Component id="SliderVentA3" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jSlider18" min="-2" max="-2" attributes="0"/>
+                  <Component id="SliderChuvA3" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
-                  <Component id="jSlider22" min="-2" max="-2" attributes="0"/>
+                  <Component id="SliderBarA3" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jComboBox5" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="ComboVento3" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jSeparator5" min="-2" pref="10" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jSlider21" min="-2" max="-2" attributes="0"/>
+                  <Component id="SliderTempA3" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jSlider23" min="-2" max="-2" attributes="0"/>
+                  <Component id="SliderUmidA3" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jRadioButton3" min="-2" max="-2" attributes="0"/>
+                  <Component id="RadioButtonInc3" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jSeparator6" min="-2" pref="10" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jSlider24" min="-2" max="-2" attributes="0"/>
+                  <Component id="SliderLixo3" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jComboBox6" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="ComboBoxAge3" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -630,7 +699,7 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JSlider" name="jSlider17">
+        <Component class="javax.swing.JSlider" name="SliderPolA3">
           <Properties>
             <Property name="maximum" type="int" value="300"/>
             <Property name="value" type="int" value="25"/>
@@ -640,8 +709,11 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderPolA3StateChanged"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JSlider" name="jSlider18">
+        <Component class="javax.swing.JSlider" name="SliderChuvA3">
           <Properties>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="value" type="int" value="2"/>
@@ -651,8 +723,11 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderChuvA3StateChanged"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JSlider" name="jSlider19">
+        <Component class="javax.swing.JSlider" name="SliderFluxA3">
           <Properties>
             <Property name="maximum" type="int" value="300"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
@@ -662,8 +737,11 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderFluxA3StateChanged"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JSlider" name="jSlider20">
+        <Component class="javax.swing.JSlider" name="SliderVentA3">
           <Properties>
             <Property name="maximum" type="int" value="150"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
@@ -674,8 +752,11 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderVentA3StateChanged"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JSlider" name="jSlider21">
+        <Component class="javax.swing.JSlider" name="SliderTempA3">
           <Properties>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="value" type="int" value="26"/>
@@ -685,8 +766,11 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderTempA3StateChanged"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JComboBox" name="jComboBox5">
+        <Component class="javax.swing.JComboBox" name="ComboVento3">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="4">
@@ -697,6 +781,9 @@
               </StringArray>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ComboVento3ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel5">
           <Properties>
@@ -705,7 +792,7 @@
         </Component>
         <Component class="javax.swing.JSeparator" name="jSeparator5">
         </Component>
-        <Component class="javax.swing.JSlider" name="jSlider22">
+        <Component class="javax.swing.JSlider" name="SliderBarA3">
           <Properties>
             <Property name="maximum" type="int" value="120"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
@@ -716,8 +803,11 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderBarA3StateChanged"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JSlider" name="jSlider23">
+        <Component class="javax.swing.JSlider" name="SliderUmidA3">
           <Properties>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="value" type="int" value="40"/>
@@ -727,24 +817,35 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderUmidA3StateChanged"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="jRadioButton3">
+        <Component class="javax.swing.JRadioButton" name="RadioButtonInc3">
           <Properties>
             <Property name="text" type="java.lang.String" value="Inc&#xea;ndio"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RadioButtonInc3ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JSeparator" name="jSeparator6">
         </Component>
-        <Component class="javax.swing.JSlider" name="jSlider24">
+        <Component class="javax.swing.JSlider" name="SliderLixo3">
           <Properties>
+            <Property name="maximum" type="int" value="250"/>
+            <Property name="value" type="int" value="0"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-                <TitledBorder title="temperatura"/>
+                <TitledBorder title="Quantidade de Lixo"/>
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderLixo3StateChanged"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JComboBox" name="jComboBox6">
+        <Component class="javax.swing.JComboBox" name="ComboBoxAge3">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="3">
@@ -754,6 +855,9 @@
               </StringArray>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ComboBoxAge3ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel6">
           <Properties>
@@ -779,31 +883,31 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
-                  <Component id="jRadioButton4" min="-2" max="-2" attributes="0"/>
+                  <Component id="RadioButtonInc4" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
                   <Group type="103" groupAlignment="1" attributes="0">
-                      <Component id="jSlider32" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Component id="SliderLixo4" alignment="1" min="-2" max="-2" attributes="0"/>
                       <Component id="jSeparator8" alignment="1" min="-2" pref="200" max="-2" attributes="0"/>
-                      <Component id="jSlider31" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Component id="SliderUmidA4" alignment="1" min="-2" max="-2" attributes="0"/>
                       <Group type="103" alignment="1" groupAlignment="0" attributes="0">
                           <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                              <Component id="jSlider29" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Component id="SliderTempA4" alignment="1" min="-2" max="-2" attributes="0"/>
                               <Group type="103" alignment="1" groupAlignment="1" max="-2" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="jSeparator7" max="32767" attributes="0"/>
                                   </Group>
                                   <Group type="103" alignment="1" groupAlignment="0" attributes="0">
-                                      <Component id="jSlider25" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jSlider27" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jSlider28" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jSlider26" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="SliderPolA4" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="SliderFluxA4" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="SliderVentA4" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="SliderChuvA4" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
-                          <Component id="jSlider30" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="SliderBarA4" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -815,13 +919,13 @@
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           <Component id="jLabel7" min="-2" pref="111" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jComboBox7" min="-2" max="-2" attributes="0"/>
+                          <Component id="ComboVento4" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="jComboBox8" min="-2" max="-2" attributes="0"/>
+                          <Component id="ComboBoxAge4" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
@@ -831,35 +935,35 @@
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <Component id="jSlider25" min="-2" max="-2" attributes="0"/>
+                  <Component id="SliderPolA4" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jSlider27" min="-2" max="-2" attributes="0"/>
+                  <Component id="SliderFluxA4" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jSlider28" min="-2" max="-2" attributes="0"/>
+                  <Component id="SliderVentA4" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jSlider26" min="-2" max="-2" attributes="0"/>
+                  <Component id="SliderChuvA4" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
-                  <Component id="jSlider30" min="-2" max="-2" attributes="0"/>
+                  <Component id="SliderBarA4" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jComboBox7" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="ComboVento4" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jSeparator7" min="-2" pref="10" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jSlider29" min="-2" max="-2" attributes="0"/>
+                  <Component id="SliderTempA4" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jSlider31" min="-2" max="-2" attributes="0"/>
+                  <Component id="SliderUmidA4" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jRadioButton4" min="-2" max="-2" attributes="0"/>
+                  <Component id="RadioButtonInc4" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jSeparator8" min="-2" pref="10" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jSlider32" min="-2" max="-2" attributes="0"/>
+                  <Component id="SliderLixo4" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jComboBox8" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="ComboBoxAge4" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -867,7 +971,7 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JSlider" name="jSlider25">
+        <Component class="javax.swing.JSlider" name="SliderPolA4">
           <Properties>
             <Property name="maximum" type="int" value="300"/>
             <Property name="value" type="int" value="25"/>
@@ -877,8 +981,11 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderPolA4StateChanged"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JSlider" name="jSlider26">
+        <Component class="javax.swing.JSlider" name="SliderChuvA4">
           <Properties>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="value" type="int" value="2"/>
@@ -888,8 +995,11 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderChuvA4StateChanged"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JSlider" name="jSlider27">
+        <Component class="javax.swing.JSlider" name="SliderFluxA4">
           <Properties>
             <Property name="maximum" type="int" value="300"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
@@ -899,8 +1009,11 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderFluxA4StateChanged"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JSlider" name="jSlider28">
+        <Component class="javax.swing.JSlider" name="SliderVentA4">
           <Properties>
             <Property name="maximum" type="int" value="150"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
@@ -911,8 +1024,11 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderVentA4StateChanged"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JSlider" name="jSlider29">
+        <Component class="javax.swing.JSlider" name="SliderTempA4">
           <Properties>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="value" type="int" value="26"/>
@@ -922,8 +1038,11 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderTempA4StateChanged"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JComboBox" name="jComboBox7">
+        <Component class="javax.swing.JComboBox" name="ComboVento4">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="4">
@@ -934,6 +1053,9 @@
               </StringArray>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ComboVento4ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel7">
           <Properties>
@@ -942,7 +1064,7 @@
         </Component>
         <Component class="javax.swing.JSeparator" name="jSeparator7">
         </Component>
-        <Component class="javax.swing.JSlider" name="jSlider30">
+        <Component class="javax.swing.JSlider" name="SliderBarA4">
           <Properties>
             <Property name="maximum" type="int" value="120"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
@@ -953,8 +1075,11 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderBarA4StateChanged"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JSlider" name="jSlider31">
+        <Component class="javax.swing.JSlider" name="SliderUmidA4">
           <Properties>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="value" type="int" value="40"/>
@@ -964,24 +1089,35 @@
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderUmidA4StateChanged"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="jRadioButton4">
+        <Component class="javax.swing.JRadioButton" name="RadioButtonInc4">
           <Properties>
             <Property name="text" type="java.lang.String" value="Inc&#xea;ndio"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RadioButtonInc4ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JSeparator" name="jSeparator8">
         </Component>
-        <Component class="javax.swing.JSlider" name="jSlider32">
+        <Component class="javax.swing.JSlider" name="SliderLixo4">
           <Properties>
+            <Property name="maximum" type="int" value="250"/>
+            <Property name="value" type="int" value="0"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-                <TitledBorder title="temperatura"/>
+                <TitledBorder title="Quantidade de Lixo"/>
               </Border>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="SliderLixo4StateChanged"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JComboBox" name="jComboBox8">
+        <Component class="javax.swing.JComboBox" name="ComboBoxAge4">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="3">
@@ -991,6 +1127,9 @@
               </StringArray>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ComboBoxAge4ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel8">
           <Properties>
