@@ -101,6 +101,7 @@ public class Sensores extends javax.swing.JFrame {
         jPanel1.setPreferredSize(new java.awt.Dimension(250, 300));
 
         SliderPolA1.setMaximum(300);
+        SliderPolA1.setPaintLabels(true);
         SliderPolA1.setValue(25);
         SliderPolA1.setBorder(javax.swing.BorderFactory.createTitledBorder("Indice de poluição"));
         SliderPolA1.addChangeListener(new javax.swing.event.ChangeListener() {
@@ -109,6 +110,7 @@ public class Sensores extends javax.swing.JFrame {
             }
         });
 
+        SliderChuvA1.setPaintLabels(true);
         SliderChuvA1.setToolTipText("");
         SliderChuvA1.setValue(2);
         SliderChuvA1.setBorder(javax.swing.BorderFactory.createTitledBorder("Probabilidade de chuva (%)"));
@@ -119,6 +121,7 @@ public class Sensores extends javax.swing.JFrame {
         });
 
         SliderFluxA1.setMaximum(300);
+        SliderFluxA1.setPaintLabels(true);
         SliderFluxA1.setToolTipText("");
         SliderFluxA1.setBorder(javax.swing.BorderFactory.createTitledBorder("Fluxo de veículos (veículos por hora)"));
         SliderFluxA1.addChangeListener(new javax.swing.event.ChangeListener() {
@@ -128,6 +131,7 @@ public class Sensores extends javax.swing.JFrame {
         });
 
         SliderVentA1.setMaximum(150);
+        SliderVentA1.setPaintLabels(true);
         SliderVentA1.setToolTipText("");
         SliderVentA1.setValue(15);
         SliderVentA1.setBorder(javax.swing.BorderFactory.createTitledBorder("Velocidade do vento"));
@@ -137,6 +141,7 @@ public class Sensores extends javax.swing.JFrame {
             }
         });
 
+        SliderTempA1.setPaintLabels(true);
         SliderTempA1.setToolTipText("");
         SliderTempA1.setValue(26);
         SliderTempA1.setBorder(javax.swing.BorderFactory.createTitledBorder("temperatura"));
@@ -156,6 +161,7 @@ public class Sensores extends javax.swing.JFrame {
         jLabel1.setText("Direção do vento");
 
         SliderBarA1.setMaximum(120);
+        SliderBarA1.setPaintLabels(true);
         SliderBarA1.setToolTipText("");
         SliderBarA1.setValue(20);
         SliderBarA1.setBorder(javax.swing.BorderFactory.createTitledBorder("Nível de barulho dB"));
@@ -165,6 +171,7 @@ public class Sensores extends javax.swing.JFrame {
             }
         });
 
+        SliderUmidA1.setPaintLabels(true);
         SliderUmidA1.setToolTipText("");
         SliderUmidA1.setValue(40);
         SliderUmidA1.setBorder(javax.swing.BorderFactory.createTitledBorder("Umidade relativa (%)"));
@@ -182,6 +189,7 @@ public class Sensores extends javax.swing.JFrame {
         });
 
         SliderLixo1.setMaximum(250);
+        SliderLixo1.setPaintLabels(true);
         SliderLixo1.setValue(0);
         SliderLixo1.setBorder(javax.swing.BorderFactory.createTitledBorder("Quantidade de Lixo"));
         SliderLixo1.addChangeListener(new javax.swing.event.ChangeListener() {
@@ -279,6 +287,7 @@ public class Sensores extends javax.swing.JFrame {
         jPanel2.setPreferredSize(new java.awt.Dimension(250, 300));
 
         SliderPolA2.setMaximum(300);
+        SliderPolA2.setPaintLabels(true);
         SliderPolA2.setValue(25);
         SliderPolA2.setBorder(javax.swing.BorderFactory.createTitledBorder("Indice de poluição"));
         SliderPolA2.addChangeListener(new javax.swing.event.ChangeListener() {
@@ -287,6 +296,7 @@ public class Sensores extends javax.swing.JFrame {
             }
         });
 
+        SliderChuvA2.setPaintLabels(true);
         SliderChuvA2.setToolTipText("");
         SliderChuvA2.setValue(2);
         SliderChuvA2.setBorder(javax.swing.BorderFactory.createTitledBorder("Probabilidade de chuva (%)"));
@@ -297,6 +307,7 @@ public class Sensores extends javax.swing.JFrame {
         });
 
         SliderFluxA2.setMaximum(300);
+        SliderFluxA2.setPaintLabels(true);
         SliderFluxA2.setToolTipText("");
         SliderFluxA2.setBorder(javax.swing.BorderFactory.createTitledBorder("Fluxo de veículos (veículos por hora)"));
         SliderFluxA2.addChangeListener(new javax.swing.event.ChangeListener() {
@@ -306,6 +317,7 @@ public class Sensores extends javax.swing.JFrame {
         });
 
         SliderVentA2.setMaximum(150);
+        SliderVentA2.setPaintLabels(true);
         SliderVentA2.setToolTipText("");
         SliderVentA2.setValue(15);
         SliderVentA2.setBorder(javax.swing.BorderFactory.createTitledBorder("Velocidade do vento"));
@@ -315,6 +327,7 @@ public class Sensores extends javax.swing.JFrame {
             }
         });
 
+        SliderTempA2.setPaintLabels(true);
         SliderTempA2.setToolTipText("");
         SliderTempA2.setValue(26);
         SliderTempA2.setBorder(javax.swing.BorderFactory.createTitledBorder("temperatura"));
@@ -334,6 +347,7 @@ public class Sensores extends javax.swing.JFrame {
         jLabel3.setText("Direção do vento");
 
         SliderBarA2.setMaximum(120);
+        SliderBarA2.setPaintLabels(true);
         SliderBarA2.setToolTipText("");
         SliderBarA2.setValue(20);
         SliderBarA2.setBorder(javax.swing.BorderFactory.createTitledBorder("Nível de barulho dB"));
@@ -343,6 +357,7 @@ public class Sensores extends javax.swing.JFrame {
             }
         });
 
+        SliderUmidA2.setPaintLabels(true);
         SliderUmidA2.setToolTipText("");
         SliderUmidA2.setValue(40);
         SliderUmidA2.setBorder(javax.swing.BorderFactory.createTitledBorder("Umidade relativa (%)"));
@@ -360,6 +375,7 @@ public class Sensores extends javax.swing.JFrame {
         });
 
         SliderLixo2.setMaximum(250);
+        SliderLixo2.setPaintLabels(true);
         SliderLixo2.setValue(0);
         SliderLixo2.setBorder(javax.swing.BorderFactory.createTitledBorder("Quantidade de Lixo"));
         SliderLixo2.addChangeListener(new javax.swing.event.ChangeListener() {
@@ -457,6 +473,7 @@ public class Sensores extends javax.swing.JFrame {
         jPanel3.setPreferredSize(new java.awt.Dimension(250, 300));
 
         SliderPolA3.setMaximum(300);
+        SliderPolA3.setPaintLabels(true);
         SliderPolA3.setValue(25);
         SliderPolA3.setBorder(javax.swing.BorderFactory.createTitledBorder("Indice de poluição"));
         SliderPolA3.addChangeListener(new javax.swing.event.ChangeListener() {
@@ -465,6 +482,7 @@ public class Sensores extends javax.swing.JFrame {
             }
         });
 
+        SliderChuvA3.setPaintLabels(true);
         SliderChuvA3.setToolTipText("");
         SliderChuvA3.setValue(2);
         SliderChuvA3.setBorder(javax.swing.BorderFactory.createTitledBorder("Probabilidade de chuva (%)"));
@@ -475,6 +493,7 @@ public class Sensores extends javax.swing.JFrame {
         });
 
         SliderFluxA3.setMaximum(300);
+        SliderFluxA3.setPaintLabels(true);
         SliderFluxA3.setToolTipText("");
         SliderFluxA3.setBorder(javax.swing.BorderFactory.createTitledBorder("Fluxo de veículos (veículos por hora)"));
         SliderFluxA3.addChangeListener(new javax.swing.event.ChangeListener() {
@@ -484,6 +503,7 @@ public class Sensores extends javax.swing.JFrame {
         });
 
         SliderVentA3.setMaximum(150);
+        SliderVentA3.setPaintLabels(true);
         SliderVentA3.setToolTipText("");
         SliderVentA3.setValue(15);
         SliderVentA3.setBorder(javax.swing.BorderFactory.createTitledBorder("Velocidade do vento"));
@@ -493,6 +513,7 @@ public class Sensores extends javax.swing.JFrame {
             }
         });
 
+        SliderTempA3.setPaintLabels(true);
         SliderTempA3.setToolTipText("");
         SliderTempA3.setValue(26);
         SliderTempA3.setBorder(javax.swing.BorderFactory.createTitledBorder("temperatura"));
@@ -512,6 +533,7 @@ public class Sensores extends javax.swing.JFrame {
         jLabel5.setText("Direção do vento");
 
         SliderBarA3.setMaximum(120);
+        SliderBarA3.setPaintLabels(true);
         SliderBarA3.setToolTipText("");
         SliderBarA3.setValue(20);
         SliderBarA3.setBorder(javax.swing.BorderFactory.createTitledBorder("Nível de barulho dB"));
@@ -521,6 +543,7 @@ public class Sensores extends javax.swing.JFrame {
             }
         });
 
+        SliderUmidA3.setPaintLabels(true);
         SliderUmidA3.setToolTipText("");
         SliderUmidA3.setValue(40);
         SliderUmidA3.setBorder(javax.swing.BorderFactory.createTitledBorder("Umidade relativa (%)"));
@@ -538,6 +561,7 @@ public class Sensores extends javax.swing.JFrame {
         });
 
         SliderLixo3.setMaximum(250);
+        SliderLixo3.setPaintLabels(true);
         SliderLixo3.setValue(0);
         SliderLixo3.setBorder(javax.swing.BorderFactory.createTitledBorder("Quantidade de Lixo"));
         SliderLixo3.addChangeListener(new javax.swing.event.ChangeListener() {
@@ -635,6 +659,7 @@ public class Sensores extends javax.swing.JFrame {
         jPanel4.setPreferredSize(new java.awt.Dimension(250, 300));
 
         SliderPolA4.setMaximum(300);
+        SliderPolA4.setPaintLabels(true);
         SliderPolA4.setValue(25);
         SliderPolA4.setBorder(javax.swing.BorderFactory.createTitledBorder("Indice de poluição"));
         SliderPolA4.addChangeListener(new javax.swing.event.ChangeListener() {
@@ -643,6 +668,7 @@ public class Sensores extends javax.swing.JFrame {
             }
         });
 
+        SliderChuvA4.setPaintLabels(true);
         SliderChuvA4.setToolTipText("");
         SliderChuvA4.setValue(2);
         SliderChuvA4.setBorder(javax.swing.BorderFactory.createTitledBorder("Probabilidade de chuva (%)"));
@@ -653,6 +679,7 @@ public class Sensores extends javax.swing.JFrame {
         });
 
         SliderFluxA4.setMaximum(300);
+        SliderFluxA4.setPaintLabels(true);
         SliderFluxA4.setToolTipText("");
         SliderFluxA4.setBorder(javax.swing.BorderFactory.createTitledBorder("Fluxo de veículos (veículos por hora)"));
         SliderFluxA4.addChangeListener(new javax.swing.event.ChangeListener() {
@@ -662,6 +689,7 @@ public class Sensores extends javax.swing.JFrame {
         });
 
         SliderVentA4.setMaximum(150);
+        SliderVentA4.setPaintLabels(true);
         SliderVentA4.setToolTipText("");
         SliderVentA4.setValue(15);
         SliderVentA4.setBorder(javax.swing.BorderFactory.createTitledBorder("Velocidade do vento"));
@@ -671,6 +699,7 @@ public class Sensores extends javax.swing.JFrame {
             }
         });
 
+        SliderTempA4.setPaintLabels(true);
         SliderTempA4.setToolTipText("");
         SliderTempA4.setValue(26);
         SliderTempA4.setBorder(javax.swing.BorderFactory.createTitledBorder("temperatura"));
@@ -690,6 +719,7 @@ public class Sensores extends javax.swing.JFrame {
         jLabel7.setText("Direção do vento");
 
         SliderBarA4.setMaximum(120);
+        SliderBarA4.setPaintLabels(true);
         SliderBarA4.setToolTipText("");
         SliderBarA4.setValue(20);
         SliderBarA4.setBorder(javax.swing.BorderFactory.createTitledBorder("Nível de barulho dB"));
@@ -699,6 +729,7 @@ public class Sensores extends javax.swing.JFrame {
             }
         });
 
+        SliderUmidA4.setPaintLabels(true);
         SliderUmidA4.setToolTipText("");
         SliderUmidA4.setValue(40);
         SliderUmidA4.setBorder(javax.swing.BorderFactory.createTitledBorder("Umidade relativa (%)"));
@@ -716,6 +747,7 @@ public class Sensores extends javax.swing.JFrame {
         });
 
         SliderLixo4.setMaximum(250);
+        SliderLixo4.setPaintLabels(true);
         SliderLixo4.setValue(0);
         SliderLixo4.setBorder(javax.swing.BorderFactory.createTitledBorder("Quantidade de Lixo"));
         SliderLixo4.addChangeListener(new javax.swing.event.ChangeListener() {
