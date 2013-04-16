@@ -13,25 +13,25 @@ public interface AtualizarInformacoesDeContexto {
     
    
     
-    public void atualizarIndicePoluicao(Integer area, int indexPolluition);
+    public void atualizarIndicePoluicao(Integer area, Integer indexPolluition);
     
-    public void atualizarFluxoDeVeiculos(Integer area, int vehicleFlow);
+    public void atualizarFluxoDeVeiculos(Integer area, Integer vehicleFlow);
     
-    public void atualizarVelociadeDoVento(Integer area, int windSpeed);
+    public void atualizarVelociadeDoVento(Integer area, Integer windSpeed);
     
     public void atualizardirecaoDoVento(Integer area, String directionWind);
     
-    public void atualizarProbalidadeChuva( Integer area, int willRain);
+    public void atualizarProbalidadeChuva( Integer area, Integer willRain);
     
-    public void atualizarQuantidadeRuido( Integer area, int noise);
+    public void atualizarQuantidadeRuido( Integer area, Integer noise);
     
-    public void atualizarTemeperatura(Integer area, int temperature);
+    public void atualizarTemeperatura(Integer area, Integer temperature);
     
-    public void atualizarHumidade( Integer area, int humidity);
+    public void atualizarHumidade( Integer area, Integer humidity);
     
-    public void atualizarIncidenciaDeIncendio( Integer area, boolean isFire);
+    public void atualizarIncidenciaDeIncendio( Integer area, Boolean isFire);
     
-    public void atualizarQuantidadeLixo( Integer area, int trash);
+    public void atualizarQuantidadeLixo( Integer area, Integer trash);
     
     public void atualizarAgenteProximo( Integer area, String agentNearName);
     
