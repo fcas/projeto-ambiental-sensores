@@ -7,7 +7,6 @@ package br.ufrn.GUI;
 import br.ufrn.controlers.AtualizarInformacoesDeContexto;
 import br.ufrn.controlers.ConcreteAtualizarInformaçõesDeContexto;
 
-
 /**
  *
  * @author Zeff
@@ -868,9 +867,8 @@ public class Sensores extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-    
     AtualizarInformacoesDeContexto atualizar = new ConcreteAtualizarInformaçõesDeContexto();
-    
+
     private void SliderPolA1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_SliderPolA1StateChanged
         atualizar.atualizarIndicePoluicao(1, SliderPolA1.getValue());
     }//GEN-LAST:event_SliderPolA1StateChanged
@@ -1004,34 +1002,34 @@ public class Sensores extends javax.swing.JFrame {
     }//GEN-LAST:event_SliderUmidA4StateChanged
 
     private void RadioButtonInc1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RadioButtonInc1ActionPerformed
-        if(RadioButtonInc1.isSelected()){
-                   atualizar.atualizarIncidenciaDeIncendio(1, true);
-        }else{
-                   atualizar.atualizarIncidenciaDeIncendio(1, false);
+        if (RadioButtonInc1.isSelected()) {
+            atualizar.atualizarIncidenciaDeIncendio(1, true);
+        } else {
+            atualizar.atualizarIncidenciaDeIncendio(1, false);
         }
     }//GEN-LAST:event_RadioButtonInc1ActionPerformed
 
     private void RadioButtonInc2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RadioButtonInc2ActionPerformed
-        if(RadioButtonInc2.isSelected()){
-                   atualizar.atualizarIncidenciaDeIncendio(2, true);
-        }else{
-                   atualizar.atualizarIncidenciaDeIncendio(2, false);
+        if (RadioButtonInc2.isSelected()) {
+            atualizar.atualizarIncidenciaDeIncendio(2, true);
+        } else {
+            atualizar.atualizarIncidenciaDeIncendio(2, false);
         }
     }//GEN-LAST:event_RadioButtonInc2ActionPerformed
 
     private void RadioButtonInc3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RadioButtonInc3ActionPerformed
-        if(RadioButtonInc3.isSelected()){
-                   atualizar.atualizarIncidenciaDeIncendio(3, true);
-        }else{
-                   atualizar.atualizarIncidenciaDeIncendio(3, false);
+        if (RadioButtonInc3.isSelected()) {
+            atualizar.atualizarIncidenciaDeIncendio(3, true);
+        } else {
+            atualizar.atualizarIncidenciaDeIncendio(3, false);
         }
     }//GEN-LAST:event_RadioButtonInc3ActionPerformed
 
     private void RadioButtonInc4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RadioButtonInc4ActionPerformed
-        if(RadioButtonInc4.isSelected()){
-                   atualizar.atualizarIncidenciaDeIncendio(4, true);
-        }else{
-                   atualizar.atualizarIncidenciaDeIncendio(4, false);
+        if (RadioButtonInc4.isSelected()) {
+            atualizar.atualizarIncidenciaDeIncendio(4, true);
+        } else {
+            atualizar.atualizarIncidenciaDeIncendio(4, false);
         }
     }//GEN-LAST:event_RadioButtonInc4ActionPerformed
 
@@ -1171,8 +1169,4 @@ public class Sensores extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator7;
     private javax.swing.JSeparator jSeparator8;
     // End of variables declaration//GEN-END:variables
-
-
-
-
 }
