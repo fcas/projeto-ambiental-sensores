@@ -86,7 +86,7 @@ public class ConcreteAtualizarInformaçõesDeContexto implements AtualizarInform
 
     @Override
     public void atualizarDistanciaAgente(Integer area, Integer agentDistance) {
-        WebResource resource = client.resource(URL_BASE_SERVICO+"atualizar_agente_proximo/"+area);
+        WebResource resource = client.resource(URL_BASE_SERVICO+"atualizar_distancia_agente/"+area);
         resource.type("application/json").post(agentDistance.toString());
     }
     

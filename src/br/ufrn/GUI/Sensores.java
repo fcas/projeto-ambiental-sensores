@@ -1155,15 +1155,15 @@ public class Sensores extends javax.swing.JFrame {
     }//GEN-LAST:event_jSliderAgenteA1StateChanged
 
     private void jSliderAgenteA2StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSliderAgenteA2StateChanged
-        atualizar.atualizarDistanciaAgente(1, jSliderAgenteA2.getValue());
+        atualizar.atualizarDistanciaAgente(2, jSliderAgenteA2.getValue());
     }//GEN-LAST:event_jSliderAgenteA2StateChanged
 
     private void jSliderAgenteA3StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSliderAgenteA3StateChanged
-        atualizar.atualizarDistanciaAgente(1, jSliderAgenteA3.getValue());
+        atualizar.atualizarDistanciaAgente(3, jSliderAgenteA3.getValue());
     }//GEN-LAST:event_jSliderAgenteA3StateChanged
 
     private void jSliderAgenteA4StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSliderAgenteA4StateChanged
-        atualizar.atualizarDistanciaAgente(1, jSliderAgenteA4.getValue());
+        atualizar.atualizarDistanciaAgente(4, jSliderAgenteA4.getValue());
     }//GEN-LAST:event_jSliderAgenteA4StateChanged
 
     /**
