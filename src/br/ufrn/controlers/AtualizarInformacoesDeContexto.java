@@ -35,5 +35,6 @@ public interface AtualizarInformacoesDeContexto {
     
     public void atualizarAgenteProximo( Integer area, String agentNearName);
     
-    
+    public void atualizarDistanciaAgente( Integer area, Integer agentDistance);
+
 }

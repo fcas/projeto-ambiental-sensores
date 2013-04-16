@@ -4,7 +4,6 @@
  */
 package br.ufrn.controlers;
 
-import br.ufrn.controlers.AtualizarInformacoesDeContexto;
 import com.sun.jersey.api.client.Client;
 import com.sun.jersey.api.client.WebResource;
 
@@ -17,7 +16,7 @@ public class ConcreteAtualizarInformaçõesDeContexto implements AtualizarInform
     
     
     private Client client = Client.create();
-    private static String URL_BASE_SERVICO = "http://localhost:8084/MonitoramentoAmbientalCidade2/webresources/monitoramento_ambiental/";
+    private static String URL_BASE_SERVICO = "http://localhost:8084/ProjetoAmbientalWebService/webresources/monitoramento_ambiental/";
 
     @Override
     public void atualizarIndicePoluicao(Integer area, Integer indexPolluition) {
@@ -83,6 +82,12 @@ public class ConcreteAtualizarInformaçõesDeContexto implements AtualizarInform
     public void atualizarAgenteProximo(Integer area, String agentNearName) {
         WebResource resource = client.resource(URL_BASE_SERVICO+"atualizar_agente_proximo/"+area);
         resource.type("application/json").post(agentNearName.toString());
+    }
+
+    @Override
+    public void atualizarDistanciaAgente(Integer area, Integer agentDistance) {
+        WebResource resource = client.resource(URL_BASE_SERVICO+"atualizar_agente_proximo/"+area);
+        resource.type("application/json").post(agentDistance.toString());
     }
     
 }
