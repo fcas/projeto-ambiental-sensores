@@ -53,7 +53,7 @@ public class ConcreteAtualizarInformaçõesDeContexto implements AtualizarInform
     }
 
     @Override
-    public void atualizarTemeperatura(Integer area, int temperature) {
+    public void atualizarTemeperatura(Integer area, float temperature) {
         WebResource resource = client.resource(URL_BASE_SERVICO+"atualizar_temperatura/"+area);
         resource.post(temperature);
     }

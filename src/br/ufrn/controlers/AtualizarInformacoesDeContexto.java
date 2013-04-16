@@ -25,7 +25,7 @@ public interface AtualizarInformacoesDeContexto {
     
     public void atualizarQuantidadeRuido( Integer area, int noise);
     
-    public void atualizarTemeperatura(Integer area, int temperature);
+    public void atualizarTemeperatura(Integer area, float temperature);
     
     public void atualizarHumidade( Integer area, int humidity);
     
