@@ -29,7 +29,7 @@ public interface AtualizarInformacoesDeContexto {
     
     public void atualizarHumidade( Integer area, Integer humidity);
     
-    public void atualizarIncidenciaDeIncendio( Integer area, Boolean isFire);
+    public void atualizarIncidenciaDeIncendio( Integer area, Integer isFire);
     
     public void atualizarQuantidadeLixo( Integer area, Integer trash);
     

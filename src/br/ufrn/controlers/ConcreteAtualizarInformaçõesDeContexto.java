@@ -67,7 +67,7 @@ public class ConcreteAtualizarInformaçõesDeContexto implements AtualizarInform
     }
 
     @Override
-    public void atualizarIncidenciaDeIncendio(Integer area, Boolean isFire) {
+    public void atualizarIncidenciaDeIncendio(Integer area, Integer isFire) {
         WebResource resource = client.resource(URL_BASE_SERVICO+"atualizar_incidencia_incendio/"+area);
         resource.type("application/json").post(isFire.toString());
     }

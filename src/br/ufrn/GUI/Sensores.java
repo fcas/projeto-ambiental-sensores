@@ -1023,15 +1023,15 @@ public class Sensores extends javax.swing.JFrame {
     }//GEN-LAST:event_SliderTempA1StateChanged
 
     private void SliderTempA2StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_SliderTempA2StateChanged
-        atualizar.atualizarTemeperatura(2, SliderTempA1.getValue());
+        atualizar.atualizarTemeperatura(2, SliderTempA2.getValue());
     }//GEN-LAST:event_SliderTempA2StateChanged
 
     private void SliderTempA3StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_SliderTempA3StateChanged
-        atualizar.atualizarTemeperatura(3, SliderTempA1.getValue());
+        atualizar.atualizarTemeperatura(3, SliderTempA3.getValue());
     }//GEN-LAST:event_SliderTempA3StateChanged
 
     private void SliderTempA4StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_SliderTempA4StateChanged
-        atualizar.atualizarTemeperatura(4, SliderTempA1.getValue());
+        atualizar.atualizarTemeperatura(4, SliderTempA4.getValue());
     }//GEN-LAST:event_SliderTempA4StateChanged
 
     private void SliderUmidA1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_SliderUmidA1StateChanged
@@ -1052,33 +1052,33 @@ public class Sensores extends javax.swing.JFrame {
 
     private void RadioButtonInc1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RadioButtonInc1ActionPerformed
         if (RadioButtonInc1.isSelected()) {
-            atualizar.atualizarIncidenciaDeIncendio(1, true);
+            atualizar.atualizarIncidenciaDeIncendio(1, 1);
         } else {
-            atualizar.atualizarIncidenciaDeIncendio(1, false);
+            atualizar.atualizarIncidenciaDeIncendio(1, 0);
         }
     }//GEN-LAST:event_RadioButtonInc1ActionPerformed
 
     private void RadioButtonInc2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RadioButtonInc2ActionPerformed
         if (RadioButtonInc2.isSelected()) {
-            atualizar.atualizarIncidenciaDeIncendio(2, true);
+            atualizar.atualizarIncidenciaDeIncendio(2, 1);
         } else {
-            atualizar.atualizarIncidenciaDeIncendio(2, false);
+            atualizar.atualizarIncidenciaDeIncendio(2, 0);
         }
     }//GEN-LAST:event_RadioButtonInc2ActionPerformed
 
     private void RadioButtonInc3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RadioButtonInc3ActionPerformed
         if (RadioButtonInc3.isSelected()) {
-            atualizar.atualizarIncidenciaDeIncendio(3, true);
+            atualizar.atualizarIncidenciaDeIncendio(3, 1);
         } else {
-            atualizar.atualizarIncidenciaDeIncendio(3, false);
+            atualizar.atualizarIncidenciaDeIncendio(3, 0);
         }
     }//GEN-LAST:event_RadioButtonInc3ActionPerformed
 
     private void RadioButtonInc4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RadioButtonInc4ActionPerformed
         if (RadioButtonInc4.isSelected()) {
-            atualizar.atualizarIncidenciaDeIncendio(4, true);
+            atualizar.atualizarIncidenciaDeIncendio(4, 1);
         } else {
-            atualizar.atualizarIncidenciaDeIncendio(4, false);
+            atualizar.atualizarIncidenciaDeIncendio(4, 0);
         }
     }//GEN-LAST:event_RadioButtonInc4ActionPerformed
 
