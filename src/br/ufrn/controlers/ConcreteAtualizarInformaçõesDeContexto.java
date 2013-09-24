@@ -16,7 +16,7 @@ public class ConcreteAtualizarInformaçõesDeContexto implements AtualizarInform
     
     
     private Client client = Client.create();
-    private static String URL_BASE_SERVICO = "http://localhost:8084/ProjetoAmbientalWebService/webresources/monitoramento_ambiental/";
+    private static String URL_BASE_SERVICO = "http://localhost:8080/ProjetoAmbientalWebService/webresources/monitoramento_ambiental/";
 
     @Override
     public void atualizarIndicePoluicao(Integer area, Integer indexPolluition) {
